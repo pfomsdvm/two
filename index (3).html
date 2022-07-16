@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>彭阳春</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="
+    background-color: #f1f1;
+    text-align: center;
+    padding: 60px
+    ">
+      <img src='https://ts1.cn.mm.bing.net/th/id/R-C.a726d86a2a04640ff5750685e2031200?rik=XNjKz%2bSskNTNMw&riu=http%3a%2f%2fpic.22520.cn%2fup%2f200810%2f1597053086764201.jpg&ehk=vi8sFsw59DPsBkUbV7xYIzzkDlFLYY1t57QHcbM3MKU%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1' alt="王晓婷" width="170" height="170">
+    </div>
+    <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 15px;
+    line-heigt: 1.7;
+    color: blue
+    ">
+      <p>啦啦啦啦啦</p>
+      <p>芜湖</p>
+      <p>起飞了</p>
+      <p>我最爱看女人打架了</p>
+      <p>嘀嘀嘀</p>
+      <p>飞，欸，起飞</p>
+    </div>
+    <divstyle="
+    background-color: #f1f1;
+    text-align: center;
+    padding: 60px
+    font-size= 12px;
+    ">
+    <p>下一页</p>
+    <a></a>
+    <p>欢迎进入彭某小网站</p>
+    <a href="https://b23.tv/k32EPyL?share_medium=android&share_source=qq&bbid=XXC9C95C21C27F45A95768296D9C0ADBFA3E9&ts=1657947974631">主页链接</a>
+    </div>
+    <script>
+        (function () {
+            var a_idx = 0;
+            window.onclick = function (event) {
+                var a = new Array("❤暴富❤");
+
+                var heart = document.createElement("b"); //创建b元素
+                heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+
+                document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+                a_idx = (a_idx + 1) % a.length;
+                heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+                var f = 16, // 字体大小
+                    x = event.clientX - f / 2, // 横坐标
+                    y = event.clientY - f, // 纵坐标
+                    c = randomColor(), // 随机颜色
+                    a = 1, // 透明度
+                    s = 1.2; // 放大缩小
+
+                var timer = setInterval(function () { //添加定时器
+                    if (a <= 0) {
+                        document.body.removeChild(heart);
+                        clearInterval(timer);
+                    } else {
+                        heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                            c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                            s + ");";
+
+                        y--;
+                        a -= 0.016;
+                        s += 0.002;
+                    }
+                }, 15)
+
+            }
+            // 随机颜色
+            function randomColor() {
+
+                return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                .random() * 255)) + ")";
+            }
+        }());
+    </script>
+  </body>
+</html>
